@@ -1,0 +1,2 @@
+# ignore all java class files inside all the dirs inside 2023
+*.class
