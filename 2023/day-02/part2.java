@@ -75,7 +75,7 @@ public class part2 {
             sum += sets(line);
         }
 
-        System.out.println(sum);    //2317
+        System.out.println(sum);    //74804
 
         scanner.close();
     }
