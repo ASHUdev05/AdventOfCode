@@ -1,0 +1,27 @@
+### @2023 ###
+2023/**/input.txt
+2023/**/**/input.txt
+
+### @2024 ###
+2024/.gradle
+2024/build/
+2024/!gradle/wrapper/gradle-wrapper.jar
+2024/!**/src/main/**/build/
+2024/!**/src/test/**/build/
+
+### IntelliJ IDEA ###
+.idea/
+2024/.idea/
+2024/*.iws
+2024/*.iml
+2024/*.ipr
+2024/out/
+2024/!**/src/main/**/out/
+2024/!**/src/test/**/out/
+
+### VS Code ###
+2024/.vscode/
+
+### Advent of Code ###
+2024/aoc_config.json
+2024/src/main/resources/day*.txt
