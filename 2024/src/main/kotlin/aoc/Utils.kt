@@ -14,12 +14,21 @@ object Utils {
     }
 
     /**
+     * Reads input file as a single string, splitting on blank lines
+     */
+    fun readInputAsGroups(day: Int): List<String> {
+        return File("src/main/resources/day${day.toString().padStart(2, '0')}.txt")
+            .readText()
+            .split("\n\n")
+    }
+
+    /**
      * Reads lines and converts to integers
      */
     fun readInputAsInts(day: Int): List<Int> {
         return readInput(day).map { it.toInt() }
     }
-    
+
     /**
      * Converts string to md5 hash
      */
@@ -34,14 +43,14 @@ object Utils {
     fun <T> List<T>.chunked(size: Int): List<List<T>> {
         return chunked(size)
     }
-    
+
     /**
      * Converts a string of digits to list of integers
      */
     fun String.toDigits(): List<Int> {
         return map { it.toString().toInt() }
     }
-    
+
     /**
      * Greatest Common Divisor of two numbers
      */
@@ -49,14 +58,14 @@ object Utils {
         if (b == 0L) return a
         return gcd(b, a % b)
     }
-    
+
     /**
      * Least Common Multiple of two numbers
      */
     fun lcm(a: Long, b: Long): Long {
         return a * (b / gcd(a, b))
     }
-    
+
     /**
      * Manhattan distance between two points
      */
