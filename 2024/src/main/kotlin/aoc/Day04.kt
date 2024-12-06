@@ -21,7 +21,7 @@ class Day04 {
         }
 
         var word = ""
-        for (i in 0 until target.length) {
+        for (i in target.indices) {
             word += grid[row + i * dRow][col + i * dCol]
         }
         return word == target
