@@ -23,6 +23,14 @@ object Utils {
     }
 
     /**
+     * Reads input file as a single string
+     */
+    fun readInputAsString(day: Int): String {
+        return File("src/main/resources/day${day.toString().padStart(2, '0')}.txt")
+            .readText()
+    }
+
+    /**
      * Reads lines and converts to integers
      */
     fun readInputAsInts(day: Int): List<Int> {
