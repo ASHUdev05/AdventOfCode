@@ -9,6 +9,16 @@
 2024/!**/src/main/**/build/
 2024/!**/src/test/**/build/
 
+### @2025 (C# / .NET) ###
+# Ignore .NET build output (compiled binaries)
+2025/**/bin/
+2025/**/obj/
+# Ignore AoC Inputs (Protects against committing puzzle data)
+2025/**/Inputs/
+# Ignore Visual Studio / VS Code local configs
+2025/.vs/
+2025/**/.vscode/
+
 ### IntelliJ IDEA ###
 .idea/
 2024/.idea/
